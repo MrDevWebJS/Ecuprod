@@ -4,57 +4,191 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/logo_ecuprod.webp" type="image/x-icon">
-    <link rel="stylesheet" href="./css/styles.css">
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./header/header.js" defer></script>
     <title>Clip | Ecuprod | Troyes</title>
 </head>
 <body>
     <div class="container">
         <header class="container__header">
-            <div class="header__logo">
-                <img src="./assets/logo_ecuprod_small.webp" alt="logo" class="logo__img">
+            <div class="header__logoNav">
+                <div class="logoNav__logo">
+                    <img src="./assets/logo_ecuprod_small.webp" alt="logo" class="logo__img">
+                </div>
+                <div class="logoNav__nav">
+                    <span class="nav__svg">
+                        <svg 
+                            class="burgerSvg"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke="white"
+                            width="35"
+                            height="35" 
+                        >
+                            <path 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" 
+                            />
+                        </svg>
+    
+                        <svg 
+                            class="closeSvg"
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24"
+                            stroke="white"
+                            width="35"
+                            height="35"
+                        >
+                            <path 
+                                stroke-linecap="round" 
+                                stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" 
+                            />
+                        </svg>  
+                    </span>
+                </div>
+                <nav class="header__nav">
+                    <ul class="nav__menu">
+                        <li class="menu__tab"><a class="tab__link" href="#">acceuil</a></li>
+                        <li class="menu__tab"><a class="tab__link" href="#">nos travaux</a></li>
+                        <li class="menu__tab"><a class="tab__link" href="#">contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="header__menu">
-                <span class="menu__svg">
-                    <svg 
-                        class="burgerSvg"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke="white"
-                        width="35"
-                        height="35" 
-                    >
-                        <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" 
-                        />
-                    </svg>
-
-                    <svg 
-                        class="closeSvg"
-                        xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        viewBox="0 0 24 24"
-                        stroke="white"
-                        width="35"
-                        height="35"
-                    >
-                        <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" 
-                        />
-                    </svg>  
-                </span>
-            </div>
-            <nav class="header__nav">
-                <ul class="nav__menu">
-                    <li class="menu__tab"><a class="tab__link" href="#">acceuil</a></li>
-                    <li class="menu__tab"><a class="tab__link" href="#">nos travaux</a></li>
-                    <li class="menu__tab"><a class="tab__link" href="#">contact</a></li>
-                </ul>
-            </nav>
+            <h1 class="header__title">ecuprod</h1>
         </header>
+        <!-- 
+        <main class="container__main">
+            <h1 class="main__title">ecuprod</h1>
+            <svg
+                class="main__svg" 
+                preserveAspectRatio="xMidYMid meet" 
+                data-bbox="19.5 32.5 161 135" 
+                viewBox="19.5 32.5 161 135" 
+                height="200" 
+                width="200" 
+                xmlns="http://www.w3.org/2000/svg" 
+                data-type="tint" 
+                role="presentation" 
+                aria-hidden="true"
+            >
+                <g>
+                    <path d="M169 32.5H32c-6.7 0-12.5 4.7-12.5 11.3v87c0 6.7 5.8 12.7 12.5 12.7h48.5v15h-9.1c-2.4 0-4.4 2.1-4.4 4.5s2 4.5 4.4 4.5h58.2c2.4 0 4.4-2.1 4.4-4.5s-2-4.5-4.4-4.5h-10.1v-15H169c6.6 0 11.5-6 11.5-12.7v-87c0-6.6-4.9-11.3-11.5-11.3zm1.5 99c0 1.1-.9 2-2 2h-137c-1.1 0-2-.9-2-2v-87c0-1.1.9-2 2-2h137c1.1 0 2 .9 2 2v87z" fill="#FFFFFF">     
+                    </path>
+                </g>
+            </svg>
+
+            <section class="main__service">
+                <article class="service__conception">
+                    <div class="conception__svg">
+                        <svg 
+                            preserveAspectRatio="xMidYMid meet" 
+                            data-bbox="50 0 100 200" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            viewBox="50 0 100 200" 
+                            role="presentation" 
+                            aria-hidden="true"
+                            fill="#ffffff";
+                        >
+                            <g>
+                                <path d="M97 0h7v33h-7V0z"></path>
+                                <path d="M75.2 36.9L66.6 22l6.5-3.6 8.5 14.8-6.4 3.7z"></path>
+                                <path d="M106 60.5v7.4c11 0 20.4 8.8 20.4 20.2 0 .1-.1 0-.1 0h7.4c.2-15-12-27.7-27.4-28-.1 0-.3.4-.3.4z"></path>
+                                <path d="M100 42.1c-27.6 0-50 22.3-50 49.9 0 8 1.9 15.9 5.6 23 2.5 5.7 5.8 11.2 9.3 16.3C69.3 138 73 143.6 73 150v33c0 2 1.6 2.2 3.7 2.2h7.5c.6 7 7.4 14.8 15.8 14.8s15.2-7.8 15.8-14.8h7.5c2.1 0 3.7 0 3.7-2.2v-33c0-6.4 3.8-12.1 8.2-18.7 3.7-5.3 6.9-10.9 9.4-16.8 3.5-7 5.4-14.7 5.4-22.5 0-27.5-22.4-49.9-50-49.9zm0 150.5c-4.3 0-7.8-4.4-8.3-7.4h16.7c-.6 3-4.1 7.4-8.4 7.4zm20-14.4H81v-10h39v10zm0-12H81v-7h39v7zm0-9H81v-6h39v6zm17.9-47.1h-.9v1.4c-2 5.6-4.9 10.7-8.3 15.7-4.7 7.1-8.4 13-8.7 22H80.7c-.3-9-4.5-14.9-9.1-22-3-4.7-6.5-9.4-8.5-15.2v-.3c-3-6-5.2-12.8-5.2-19.6 0-23.5 18.9-42.5 42.4-42.5s42.4 18.4 42.4 41.9c-.1 6.7-1.8 13.6-4.8 18.6z"></path>
+                                <path d="M125.3 36.9l-6.4-3.7 8.5-14.8 6.4 3.7-8.5 14.8z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h2 class="conception__title">conception</h2>
+                    <p class="conception__description">Afin de répondre à vos attentes, nous vous accompagnons et guidons dans le processus créatif de votre projet du début à la fin.</p>
+                </article>
+
+                <article class="service__preparation">
+                    <div class="preparation__svg">
+                        <svg 
+                            preserveAspectRatio="xMidYMid meet" 
+                            data-bbox="25.25 19.497 149.631 160.88" 
+                            viewBox="25.25 19.497 149.631 160.88"  
+                            xmlns="http://www.w3.org/2000/svg" 
+                            data-type="tint" 
+                            role="presentation" 
+                            aria-hidden="true" 
+                            aria-label="true"
+                        >
+                            <g>
+                                <path d="M174.881 118.377c-.021-16.893-12.823-31.028-29.631-32.718V28.377h-36.593l-3.775-8.88H65.619l-3.776 8.88H25.25v152h120V151.1c16.809-1.691 29.612-15.829 29.631-32.723zM69.587 25.5h31.326l4.8 11.294H64.786L69.587 25.5zM31.25 174.377v-140h28.042l-3.578 8.414h59.071l-3.577-8.414h28.042V85.62c-18.091 1.514-31.53 17.407-30.016 35.499 1.338 15.991 14.026 28.678 30.016 30.016v23.242h-108zM142 145.259c-14.846 0-26.881-12.035-26.881-26.881S127.154 91.497 142 91.497s26.88 12.034 26.881 26.88c-.017 14.839-12.042 26.865-26.881 26.882z" fill="#FFFFFF"></path>
+                                <path d="M138.036 122.6l-7.02-5.7-3.784 4.656 8.871 7.207a3.385 3.385 0 0 0 4.594-.28l16.336-16.9-4.314-4.17-14.683 15.187z" fill="#FFFFFF"></path>
+                                <path fill="#FFFFFF" d="M112 72.503v5.994H44v-5.994h68z"></path>
+                                <path fill="#FFFFFF" d="M88.909 102.253v6H44v-6h44.909z"></path>
+                                <path fill="#FFFFFF" d="M75.091 130.503v7H44v-7h31.091z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h2 class="preparation__title">preparation</h2>
+                    <p class="preparation__description">Pas besoin de vous préoccupez de l'organisation, peu importe l'envergure de votre projet, on s'occupe de tout !</p>
+                </article>
+
+                <article class="service__tournage">
+                    <div class="tournage__svg">
+                        <svg 
+                            preserveAspectRatio="xMidYMid meet" 
+                            data-bbox="35.999 35.501 128.001 128.999" 
+                            viewBox="35.999 35.501 128.001 128.999" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            data-type="color" 
+                            role="presentation" 
+                            aria-hidden="true" 
+                            <g>
+                                <path d="M149.502 164.5H53.819c-7.993 0-14.498-6.541-14.498-14.579V97.435a2.907 2.907 0 0 1 2.9-2.916H161.1c1.603 0 2.9 1.306 2.9 2.916v52.485c0 8.039-6.504 14.58-14.498 14.58zM45.12 100.351v49.569c0 4.824 3.902 8.748 8.699 8.748h95.684c4.797 0 8.699-3.924 8.699-8.748v-49.569H45.12z" fill="#FFFFFF" data-color="1"></path>
+                                <path fill="#FFFFFF" d="M152.402 117.846v5.832H50.919v-5.832h101.483z" data-color="1"></path>
+                                <path fill="#FFFFFF" d="M138.346 122.307L123.849 98.98l4.915-3.089 14.498 23.326-4.916 3.09z" data-color="1"></path>
+                                <path fill="#FFFFFF" d="M106.452 122.307L91.954 98.98l4.916-3.089 14.497 23.326-4.915 3.09z" data-color="1"></path>
+                                <path fill="#FFFFFF" d="M74.557 122.307L60.06 98.98l4.915-3.089 14.498 23.326-4.916 3.09z" data-color="1"></path>
+                                <path 
+                                    d="M42.221 91.604a2.88 2.88 0 0 1-1.464-.399 2.919 2.919 0 0 1-1.342-1.778l-2.936-11.283a14.553 14.553 0 0 1 1.512-11.055 14.402 14.402 0 0 1 8.843-6.741l92.563-24.368c7.724-2.042 15.67 2.634 17.697 10.411l2.936 11.283a2.918 2.918 0 0 1-2.073 3.559L42.954 91.508a2.854 2.854 0 0 1-.733.096zm100.845-50.27c-.728 0-1.467.093-2.203.286L48.3 65.987a8.643 8.643 0 0 0-5.303 4.045 8.723 8.723 0 0 0-.906 6.633v.001l2.2 8.461 109.394-28.8-2.203-8.461a8.722 8.722 0 0 0-8.416-6.532z" 
+                                    fill="#FFFFFF" 
+                                    data-color="1"></path>
+                                <path   
+                                    fill="#FFFFFF" 
+                                    d="M64.621 84.387l-5.533-1.737 8.152-26.259 5.533 1.737-8.152 26.259z" 
+                                    data-color="1"></path>
+                                <path 
+                                    fill="#FFFFFF" 
+                                    d="M95.477 76.264l-5.533-1.737 8.152-26.258 5.533 1.737-8.152 26.258z" 
+                                    data-color="1"></path>
+                                <path 
+                                    fill="#FFFFFF" 
+                                    d="M126.335 68.142l-5.536-1.737 8.146-26.259 5.536 1.737-8.146 26.259z" 
+                                    data-color="1"></path>
+                            </g>
+                        </svg>
+                    </div>
+                    <h2 class="tournage__title">tournage</h2>
+                    <p class="tournage__description">L'expérience EcuProd c'est voir votre projet prendre vie, avec une qualité cinématographique garantie.</p>
+                </article>
+
+                <article class="service__montage">
+                    <div class="montage__svg">
+                        <svg 
+                            preserveAspectRatio="xMidYMid meet" 
+                            data-bbox="43.5 62 113 76.001" 
+                            viewBox="43.5 62 113 76.001" 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            data-type="color" 
+                            role="presentation" 
+                            aria-hidden="true"
+                                <g>
+                                    <path d="M119.659 98.798l-32.41-20.173a1.43 1.43 0 0 0-1.446-.038c-.453.25-.735.725-.735 1.24v40.346a1.425 1.425 0 0 0 2.181 1.202l32.41-20.173a1.416 1.416 0 0 0 0-2.404z" fill="#FFFFFF" data-color="1"></path>
+                                    <path d="M153.128 62H46.873a3.365 3.365 0 0 0-3.373 3.357v69.287a3.365 3.365 0 0 0 3.373 3.357h106.255a3.364 3.364 0 0 0 3.372-3.357V65.357A3.365 3.365 0 0 0 153.128 62zm-94.273 69.287h-8.61v-6.449h8.61v6.449zm0-13.162h-8.61v-7.609h8.61v7.609zm0-14.321h-8.61v-7.608h8.61v7.608zm0-14.321h-8.61v-7.608h8.61v7.608zm0-14.321h-8.61v-6.449h8.61v6.449zm75.545 56.125H65.6V68.713h68.8v62.574zm15.355 0h-8.61v-6.449h8.61v6.449zm0-13.162h-8.61v-7.609h8.61v7.609zm0-14.321h-8.61v-7.608h8.61v7.608zm0-14.321h-8.61v-7.608h8.61v7.608zm0-14.321h-8.61v-6.449h8.61v6.449z" fill="#FFFFFF" data-color="2"></path>
+                                </g>
+                            </svg>
+                    </div>
+                    <h2 class="montage__title">montage</h2>
+                    <p class="montage__description">Nous sommes à l'écoute et partageons les différentes versions du montage au fur et à mesure de son avancement. Votre vision c'est notre mission.</p>
+                </article>
+            </section>
+        </main> -->
     </div>
 </body>
 </html>

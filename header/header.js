@@ -5,11 +5,17 @@ let navbar = document.querySelector(".header__nav");
 burgerSvg.addEventListener("click", () => {
     burgerSvg.style.visibility = "hidden";
     closeSvg.style.visibility = "visible";
-    navbar.style.right = "0px";
+    navbar.classList.add("active");
 });
 
 closeSvg.addEventListener("click", () => {
     burgerSvg.style.visibility = "visible";
     closeSvg.style.visibility = "hidden";
-    navbar.style.right = "-150px";
+    navbar.classList.remove("active");
+});
+
+navbar.addEventListener("click", () => {
+    navbar.classList.remove("active");
+    burgerSvg.style.visibility = "visible";
+    closeSvg.style.visibility = "hidden";
 });

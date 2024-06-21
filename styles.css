@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tangerine:wght@400;700&display=swap');
+@import url("./header/header.css");
+
+/* font-family: "Cormorant garamond"; */
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    block-size: 100vh;
+}
+
+.container {
+    inline-size: 100%;
+    block-size: 100%;
+}
+
+/* .container__header {
+    position: relative;
+    inline-size: 100%;
+    block-size: 72.5px;
+    display: flex;
+    background-color: #000000;
+}
+
+.header__logo,
+.header__menu {
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.header__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu__svg {
+    position: relative;
+    display: grid;
+    place-items: center;
+    inline-size: 45px;
+    block-size: 45px;
+    cursor: pointer;
+    background-color: #000000;
+    border-radius: 50%;
+    margin-right: .5rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.menu__svg:hover {
+    background-color: #4b5563;
+}
+
+.burgerSvg,
+.closeSvg {
+    position: absolute;
+}
+
+.closeSvg {
+    visibility: hidden;
+}
+
+.header__nav {
+    position: absolute;
+    top: 72.5px;
+    right: 0px;
+    background-color: #000000;
+    inline-size: 0px;
+    block-size: calc(100vh - 72.5px);
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+}
+
+.header__nav.active {
+    inline-size: 150px;
+}
+
+.container__main {
+    display: grid;
+    place-items: center;
+    background-color: #000000;
+}
+
+.main__title {
+    font-size: 7rem;
+    color: #ffffff;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.main__title::first-letter {
+    text-transform: uppercase;
+}
+
+.main__svg {
+    inline-size: 500px;
+    block-size: 500px;
+}
+
+.main__service {
+    display: grid;
+    place-items: center;
+    inline-size: 100%;
+    block-size: auto;
+}
+
+.service__conception,
+.service__preparation,
+.service__tournage,
+.service__montage {
+    inline-size: 300px;
+    block-size: 250px;
+    border: 2px solid #ffffff;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.conception__svg,
+.preparation__svg,
+.tournage__svg,
+.montage__svg {
+    text-align: center;
+}
+
+.conception__svg svg,
+.preparation__svg svg,
+.tournage__svg svg,
+.montage__svg svg {
+    inline-size: 90px;
+    block-size: 90px;
+}
+
+.conception__title,
+.preparation__title,
+.tournage__title,
+.montage__title {
+    inline-size: 100%;
+    font-family: "tangerine", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.conception__title::first-letter,
+.preparation__title::first-letter,
+.tournage__title::first-letter,
+.montage__title::first-letter {
+    text-transform: uppercase;
+}
+
+.conception__description,
+.preparation__description,
+.tournage__description,
+.montage__description {
+    inline-size: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1rem;
+} */

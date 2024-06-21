@@ -1,0 +1,125 @@
+.container__header {
+    inline-size: 100%;
+    block-size: 183.5px;
+    background-color: #000000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.header__logoNav {
+    position: relative;
+    display: flex;
+    box-shadow: rgba(221, 219, 219, 0.24) 0px 3px 8px;
+}
+
+.header__title {
+    text-align: center;
+    font-family: "tangerine", Arial;
+    font-size: 5rem;
+    color: #ffffff;
+    margin: 13.5px 0;
+    background-image: linear-gradient(135deg, rgba(107, 107, 107,0.06) 0%, rgba(107, 107, 107,0.06) 50%,rgba(202, 202, 202,0.06) 50%, rgba(202, 202, 202,0.06) 100%),linear-gradient(90deg, rgb(20,20,20),rgb(20,20,20)); 
+    background-size: 30px 30px;
+}
+
+.header__title::first-letter {
+    text-transform: uppercase;
+}
+
+.logoNav__logo,
+.logoNav__nav {
+    inline-size: 50%;
+}
+
+.logoNav__nav {
+    block-size: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav__svg {
+    inline-size: 45px;
+    block-size: 45px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 8px;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+}
+
+.nav__svg:hover {
+    background-color: #1f2937;
+}
+
+.burgerSvg,
+.closeSvg {
+    position: absolute;
+}
+
+.closeSvg {
+    visibility: hidden;
+}
+
+.header__nav {
+    position: absolute;
+    top: 184px;
+    right: 0;
+    display: flex;
+    inline-size: 0px;
+    block-size: 100vh;
+    background-color: #000000;
+    transition: inline-size .3s ease-in-out;
+    overflow: hidden;
+}
+
+.header__nav.active {
+    inline-size: 150px;
+}
+
+.nav__menu {
+    inline-size: 100%;
+    block-size: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.menu__tab {
+    inline-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.menu__tab:first-child {
+    margin-top: 175px;
+}
+
+.menu__tab:last-of-type {
+    margin-bottom: initial;
+}
+
+.tab__link {
+    inline-size: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "Cormorant garamond";
+    font-size: 1.35rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.tab__link::first-letter {
+    text-transform: uppercase;
+}
